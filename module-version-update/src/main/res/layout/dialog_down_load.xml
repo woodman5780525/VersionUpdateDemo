@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    >
+
+
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        android:id="@+id/dialog_down_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        custom:progress_unreached_color="#CCCCCC"
+        custom:progress_reached_color="#3498DB"
+
+        custom:progress_unreached_bar_height="4dp"
+        custom:progress_reached_bar_height="10dp"
+
+        custom:progress_text_size="10sp"
+        custom:progress_text_color="#3498DB"
+        custom:progress_text_offset="1dp"
+
+        custom:progress_max="100"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/dialog_down_load"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/dialog_btn_canner_down_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="取消"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/dialog_btn_backgroup_down_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="后台下载"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/holo_red_light"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
